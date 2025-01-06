@@ -1,0 +1,12 @@
+@import "../../scss/variables.scss";
+
+.title {
+  color: $light-green;
+  font-family: $font-family;
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: 5px 5px 5px $dark-red;
+  border-bottom: 3px solid $dark-red;
+  height: 7rem;
+  padding-top: 0.3rem;
+}

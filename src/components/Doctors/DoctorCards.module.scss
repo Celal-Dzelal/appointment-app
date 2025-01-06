@@ -1,0 +1,21 @@
+@import "../../scss/variables.scss";
+
+.container {
+  margin: 1rem auto;
+  width: 18rem !important;
+  border: 3px solid $light-green;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s all;
+  &:hover {
+    border-color: $dark-red;
+    box-shadow: 2px 2px 5px $dark-red;
+  }
+  .card {
+    .img {
+      object-fit: cover !important;
+      object-position: center !important;
+    }
+  }
+}

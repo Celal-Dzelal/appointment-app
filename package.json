@@ -4,10 +4,13 @@
   "private": true,
   "dependencies": {
     "@testing-library/react": "^16.1.0",
+    "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
     "react": "^19.0.0",
+    "react-bootstrap": "^2.10.7",
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
+    "sass": "^1.83.1",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
