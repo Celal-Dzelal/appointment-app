@@ -1,0 +1,32 @@
+@import "../../scss/variables.scss";
+
+.mainTitle {
+  text-align: center;
+  color: $light-green;
+  margin: 20px 0;
+  font-weight: bold;
+}
+.container {
+  //   border: 2px solid red;
+  width: 80%;
+  height: 10rem;
+  margin: 10px auto;
+  padding: 0 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $light-green;
+  .namesTitle {
+    color: $white-color;
+  }
+  .dateTime {
+    color: $white-color;
+  }
+  .icon {
+    color: $white-color;
+    font-size: 4rem;
+    cursor: pointer;
+  }
+}
