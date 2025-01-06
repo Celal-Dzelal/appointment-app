@@ -4,14 +4,34 @@ import { doctorData } from "../../helpers/data";
 import { Container, Row, Button, Modal, Form } from "react-bootstrap";
 import ContainerStyle from "./DoctorContainer.module.scss";
 
-function DoctorContainer() {
+function DoctorContainer({ setAppointments }) {
   const [select, setSelect] = useState(null);
+  const [patientName, setPatientName] = useState("");
+  const [appointmentDate, setAppointmentDate] = useState("");
+
   const handleSelect = (doctor) => {
     setSelect(doctor);
   };
+
   const closeModal = () => {
     setSelect(null);
   };
+
+  const handleSubmit = () => {
+    const newAppointment = {
+      id: Math.random(),
+      patient: patientName,
+      day: appointmentDate,
+      doctor: select.name,
+      consulted: false,
+    };
+    setAppointments((prevAppointments) => [
+      ...prevAppointments,
+      newAppointment,
+    ]);
+    closeModal();
+  };
+
   return (
     <Container>
       <h3 className={ContainerStyle.title}>OUR DOCTORS</h3>
@@ -46,6 +66,8 @@ function DoctorContainer() {
               type="text"
               placeholder="Enter Your Name"
               className={ContainerStyle.modalForm}
+              value={patientName}
+              onChange={(e) => setPatientName(e.target.value)}
             />
             <br />
             <Form.Label className={ContainerStyle.modalText}>
@@ -54,10 +76,14 @@ function DoctorContainer() {
             <Form.Control
               type="datetime-local"
               className={ContainerStyle.modalForm}
+              value={appointmentDate}
+              onChange={(e) => setAppointmentDate(e.target.value)}
             />
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="primary">Submit</Button>
+            <Button variant="primary" onClick={handleSubmit}>
+              Submit
+            </Button>
             <Button variant="secondary" onClick={closeModal}>
               Close
             </Button>
