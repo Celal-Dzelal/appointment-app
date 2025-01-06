@@ -33,7 +33,7 @@ function DoctorContainer({ setAppointments }) {
   };
 
   return (
-    <Container>
+    <Container className={ContainerStyle.container}>
       <h3 className={ContainerStyle.title}>OUR DOCTORS</h3>
       <Row xs={2} md={4} lg={6}>
         {doctorData.map((doctor) => (

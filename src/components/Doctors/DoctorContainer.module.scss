@@ -1,11 +1,13 @@
 @import "../../scss/variables.scss";
 
-.title {
-  color: $dark-red;
-  font-family: $font-family;
-  font-size: 3rem;
-  text-align: center;
-  margin: 2rem 0;
+.container {
+  .title {
+    color: $dark-red;
+    font-family: $font-family;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
 
 .modal {

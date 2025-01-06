@@ -10,9 +10,7 @@ function App() {
   return (
     <div>
       <Header />
-
       <DoctorContainer setAppointments={setAppointments} />
-
       <Appoinment
         appointments={appointments}
         setAppointments={setAppointments}

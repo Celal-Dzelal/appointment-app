@@ -9,12 +9,13 @@
 .container {
   //   border: 2px solid red;
   width: 80%;
-  height: 10rem;
+  height: auto;
   margin: 10px auto;
   padding: 0 40px;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background-color: $light-green;
