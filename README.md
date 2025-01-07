@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Appointment-App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Appointment-App is an application that allows users to make appointments with doctors and view their booked appointments. The page is fully responsive, and by clicking on the doctor cards, users can open modals to book appointments. The booked appointments are displayed at the bottom of the page.
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+![Demo](./public/Demo.gif)
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**JavaScript** - 61.5%
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**SCSS** - 20.8%
 
-### `npm test`
+**HTML** - 14.6%
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**CSS** - 3.1%
 
-### `npm run build`
+**FontAwesome**: Used for icons.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Google Fonts**: Used for fonts.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**React-Bootstrap**: Used for responsive design components and modals.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features
 
-### `npm run eject`
+- **Responsive Design**: Fully responsive across different devices and screen sizes.
+- **Doctor Cards**: Displays information about each doctor in a card format. Clickable to open modals.
+- **Appointment Modal**: Modal pop-up that allows users to book appointments when a doctor card is clicked.
+- **Appointment Display**: Once appointments are booked, they are shown at the bottom of the page for easy reference.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Colors
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+https://color.adobe.com/hospital-color-theme-3a61b895-0621-4978-98a3-599030f213c6/
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To set up the project locally, follow these steps:
 
-## Learn More
+1. **Clone the repository**  
+   First, clone the repository to your local machine:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+https://github.com/Celal-Dzelal/appointment-app.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **Navigate to the project folder**  
+   After cloning, navigate into the project directory:
 
-### Code Splitting
+```
+cd appointment-app
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. **Install dependencies**  
+   Next, install the required dependencies. If you're using **pnpm**:
 
-### Analyzing the Bundle Size
+```
+pnpm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. **Start the development server**  
+   Once the dependencies are installed, start the development server:
 
-### Making a Progressive Web App
+- If you're using **pnpm**:
+  ```
+  pnpm start
+  ```
+  The application will now be running on [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Project Structure
 
-### Advanced Configuration
+- **public**: Static files accessible by the browser, including images (`img`) and the main `index.html` file.
+  - **img**: Folder containing images used throughout the app (doctor photos, appointment images, etc.).
+  - **favicon.ico**: The app’s favicon.
+  - **index.html**: The main HTML file that serves as the entry point for the app.
+- **src**: Contains all the source code for the React app.
+  - **components**: Contains React components for different parts of the app.
+    - **Appoinment**: The component for handling appointment-related functionality.
+    - **Doctors**: Contains the components to display doctor cards and doctor information.
+    - **Header**: Contains the header of the application, including navigation and branding.
+  - **helpers**: Contains helper functions and data, like mock data (`data.jsx`).
+  - **scss**: SCSS files for styling the app, including variables.
+  - **App.js**: The main React component that ties together other components.
+  - **index.css**: Global styles for the app.
+  - **index.js**: The entry point for React, rendering the `App.js` component.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+- This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Feel free to fork this repository, make changes, and submit a pull request to contribute to the project.
