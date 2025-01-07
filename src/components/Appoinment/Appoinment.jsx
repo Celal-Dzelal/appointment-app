@@ -3,11 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
 function Appoinment({ appointments, setAppointments }) {
+  //! appointments (randevu listesi) ve setAppointments (randevu listesini güncellemek için kullanılan fonksiyon) prop olarak bileşene aktarılmıştır.
   const handleDelete = (id) => {
+    //! Belirtilen id değerine sahip randevuyu silmek için handleDelete fonksiyonu tanımlanmıştır.
     const updatedAppointments = appointments.filter(
-      (appointment) => appointment.id !== id
+      (appointment) => appointment.id !== id //! appointments listesinden, silmek istenen randevunun id'sine eşit olmayan randevular filtrelenerek yeni bir dizi oluşturulmuştur.
     );
-    setAppointments(updatedAppointments);
+    setAppointments(updatedAppointments); //! Güncellenmiş randevu listesi, React state'ini güncellemek için setAppointments fonksiyonuna atanmıştır.
   };
 
   return (
